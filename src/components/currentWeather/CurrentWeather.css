@@ -24,7 +24,7 @@
 .weather-description {
   margin: 0;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .weather-icon {
@@ -45,4 +45,5 @@
 .details {
   padding-top: 15px;
   width: 100%;
+  border-top: 1px solid white;
 }
