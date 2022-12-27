@@ -4,6 +4,7 @@ import CurrentWeather from "./components/currentWeather/CurrentWeather";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./api";
 import { useState } from "react";
 import Forecast from "./components/forecast/Forecast";
+import FirstScreen from "./components/first-screen/First-screen";
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -38,7 +39,7 @@ function App() {
       <Search onSearchChange={handleOnSearchChange}></Search>
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <Forecast data={forecast} />}
-      <img alt="" src="https://www.flaticon.com/free-icons/tv-box"></img>
+      {!currentWeather && !forecast && <FirstScreen />}
     </div>
   );
 }
