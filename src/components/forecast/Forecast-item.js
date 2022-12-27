@@ -7,7 +7,7 @@ const ForecastItem = ({ weekday, forecastDay }) => {
       </div>
       <img
         className="forecast_icon"
-        src={`icons/${forecastDay.weather[0].icon}.png`}
+        src={require(`../../../public/icons/${forecastDay.weather[0].icon}.png`)}
         alt="weather icon"
       ></img>
       <div className="forecast_details">

@@ -38,6 +38,7 @@ function App() {
       <Search onSearchChange={handleOnSearchChange}></Search>
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <Forecast data={forecast} />}
+      <img alt="" src="https://www.flaticon.com/free-icons/tv-box"></img>
     </div>
   );
 }

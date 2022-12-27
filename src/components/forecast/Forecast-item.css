@@ -27,10 +27,37 @@
 .forecast_details {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  gap: 10px;
 }
 
 .forecast_parameter-label {
   color: rgb(182, 182, 182);
   margin-right: 5px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .forecast_details {
+    flex-direction: column;
+  }
+
+  .forecast_icon {
+    width: 40px;
+  }
+
+  .forecast_weekday span:first-child {
+    font-size: 14px;
+  }
+
+  .forecast_weekday span:last-child {
+    font-size: 10px;
+  }
+
+  .forecast_parameter-label,
+  .forecast_parameter-value {
+    font-size: 10px;
+  }
+
+  .forecast_details {
+    gap: 0;
+  }
 }
